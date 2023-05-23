@@ -8,7 +8,7 @@ class Calculator():
         return user_choice
 
 #each operation's calculation
-    
+
     #if addition
     def addition(self, num_1, num_2):
             return num_1 + num_2
