@@ -3,7 +3,7 @@
 #introducing the operations
 class Calculator():    
     def select_operation(self):
-        user_choice = input(" Enter:  A \ S \ M \ D >>>  ")
+        user_choice = input(" Enter:  A \ S \ M \ D >>>  ").upper()
         return user_choice
 
 #each operation's calculation
@@ -20,7 +20,12 @@ class Calculator():
             return num_1 / num_2
     
 #user choosing the operation
-
+    def checking_choice(self, user_choice):
+        if user_choice in ["A", "S", "M", "D"]:
+              return True
+        else:
+              return False  
+    
     #if addition
         #print sum
 

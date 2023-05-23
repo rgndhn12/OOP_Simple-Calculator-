@@ -5,5 +5,9 @@ calcu.select_operation
 
 print ( " You may choose your desired Operation!\n A. Addition\n S. Subtraction\n M. Multiplication\n D. Division ")
 
-choice = calcu.select_operation()
+operation = { "A": calcu.addition, "S": calcu.subtraction, "M": calcu.multiplication, "D": calcu.division} 
 
+while True:
+    user_choice = calcu.select_operation()
+
+   
