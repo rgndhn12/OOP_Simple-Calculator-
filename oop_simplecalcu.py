@@ -7,7 +7,18 @@ class Calculator():
         return user_choice
 
 #each operation's calculation
+    def addition(self, num_1, num_2):
+            return num_1 + num_2
 
+    def subtraction(self, num_1, num_2):
+            return num_1 - num_2
+
+    def multiplication(self, num_1, num_2):
+            return num_1 * num_2
+
+    def division(self, num_1, num_2):
+            return num_1 / num_2
+    
 #user choosing the operation
 
     #if addition
