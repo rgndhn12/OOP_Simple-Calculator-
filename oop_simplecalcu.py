@@ -1,6 +1,11 @@
 #Dahan, Regine Fae M.    BSCPE 1-5
 
 #introducing the operations
+class Calculator():
+    def select_operation(self):
+        print ( " You may choose your desired Operation!\n A. Addition\n S. Subtraction\n M. Multiplication\n D. Division ")
+
+
 
 #each operation's calculation
 
