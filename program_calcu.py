@@ -3,6 +3,20 @@ from oop_simplecalcu import Calculator
 calcu = Calculator()
 calcu.select_operation
 
+import pyfiglet
+import time
+import colorama
+from colorama import Fore
+colorama.init()
+print(Fore.LIGHTCYAN_EX+pyfiglet.figlet_format("CALCULATOR",font="stop"))
+time.sleep(1)
+border = "✪" * 75
+border_2 = " 𓇼 " * 25
+print(border)
+print(Fore.LIGHTMAGENTA_EX+' THIS PROGRAM WILL HELP YOU ADD, SUBTRACT, MULTIPLY or DIVIDE TWO NUMBERS... ')
+print(border)
+time.sleep(2)
+
 try:
     print ( " You may choose your desired Operation!\n A. Addition\n S. Subtraction\n M. Multiplication\n D. Division ")
 
@@ -13,8 +27,10 @@ try:
         if calcu.checking_choice(user_choice):
             num_1, num_2 = calcu.input_number()
 
+            print(Fore.LIGHTYELLOW_EX+pyfiglet.figlet_format("Computing...",font="wavy"))
+            time.sleep(4)
             the_result = operation[user_choice](num_1, num_2)
-            print( " The result is>>> ", the_result)
+            print(Fore.LIGHTBLUE_EX+ " The RESULT is >>> ", the_result)
 
             if calcu.try_again():
                 continue
