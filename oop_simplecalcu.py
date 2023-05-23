@@ -1,6 +1,7 @@
 #Dahan, Regine Fae M.    BSCPE 1-5
 
 #introducing the operations
+
 class Calculator():    
     def select_operation(self):
         user_choice = input(" Enter:  A \ S \ M \ D >>>  ").upper()
@@ -38,3 +39,12 @@ class Calculator():
           return num_1, num_2
 
 #tryagain?
+    def try_again(self):
+          try_again = input( "PRESS 1 if you want to try again. PRESS 2 if otherwise. ")
+          if (try_again == "1"):
+            return Calculator
+          elif (try_again == "2"):
+            print( " THANK YOU FOR USING MY PROGRAM : ) ")
+            exit()
+          else:
+            print( "INVALID." )

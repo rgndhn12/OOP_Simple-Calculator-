@@ -12,5 +12,10 @@ while True:
     if calcu.checking_choice(user_choice):
         num_1, num_2 = calcu.input_number()
 
-    the_result = operation[user_choice](num_1, num_2)
-    print( " The result is>>> ", the_result)
+        the_result = operation[user_choice](num_1, num_2)
+        print( " The result is>>> ", the_result)
+
+        if calcu.try_again():
+            continue
+    else:
+        exit()
