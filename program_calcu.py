@@ -9,5 +9,7 @@ operation = { "A": calcu.addition, "S": calcu.subtraction, "M": calcu.multiplica
 
 while True:
     user_choice = calcu.select_operation()
+    if calcu.checking_choice(user_choice):
+        num_1, num_2 = calcu.input_number()
 
-   
+    

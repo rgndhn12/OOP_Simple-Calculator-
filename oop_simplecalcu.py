@@ -7,15 +7,20 @@ class Calculator():
         return user_choice
 
 #each operation's calculation
+    
+    #if addition
     def addition(self, num_1, num_2):
             return num_1 + num_2
-
+    
+    #if subtraction
     def subtraction(self, num_1, num_2):
             return num_1 - num_2
 
+    #if multiplication
     def multiplication(self, num_1, num_2):
             return num_1 * num_2
-
+    
+    #if division
     def division(self, num_1, num_2):
             return num_1 / num_2
     
@@ -24,18 +29,12 @@ class Calculator():
         if user_choice in ["A", "S", "M", "D"]:
               return True
         else:
-              return False  
-    
-    #if addition
-        #print sum
+              return False
 
-    #if subtraction
-        #print difference
-
-    #if multiplication
-        #print product
-
-    #if division
-        #print quotient
+#user inputting the two numbers    
+    def input_number(self):
+          num_1 = float(input( " Enter your first number>>> " ))
+          num_2 = float(input( " Enter your second number>>> " ))
+          return num_1, num_2
 
 #tryagain?
