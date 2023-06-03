@@ -1,3 +1,3 @@
-from oop_simplecalcu import Calculator
-
+class SimpleCalcuInherit:
+    pass
     
