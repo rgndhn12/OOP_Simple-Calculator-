@@ -15,3 +15,4 @@
 6. If no, Display “Thank you!” and the program will exit 
 7. Use Python Function and appropriate Exceptions to capture errors during   
     runtime.
+### Now, with Inheritance Feature!
