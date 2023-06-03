@@ -19,6 +19,9 @@ print(Fore.LIGHTMAGENTA_EX+' THIS PROGRAM WILL HELP YOU ADD, SUBTRACT, MULTIPLY 
 print(border)
 time.sleep(2)
 
+inherit.user_name()
+time.sleep(2)
+
 try:
     print ( " You may choose your desired Operation!\n A. Addition\n S. Subtraction\n M. Multiplication\n D. Division ")
 
