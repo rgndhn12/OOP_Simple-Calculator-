@@ -1,7 +1,9 @@
 from oop_simplecalcu import Calculator
+from simple_calcu_inherit import SimpleCalcuInherit
 
 calcu = Calculator()
 calcu.select_operation
+inherit = SimpleCalcuInherit()
 
 import pyfiglet
 import time
@@ -16,6 +18,7 @@ print(border)
 print(Fore.LIGHTMAGENTA_EX+' THIS PROGRAM WILL HELP YOU ADD, SUBTRACT, MULTIPLY or DIVIDE TWO NUMBERS... ')
 print(border)
 time.sleep(2)
+
 
 try:
     print ( " You may choose your desired Operation!\n A. Addition\n S. Subtraction\n M. Multiplication\n D. Division ")
